@@ -10,6 +10,11 @@
       "StackName": "amplify-serceldemoamplify-dev-173424",
       "StackId": "arn:aws:cloudformation:eu-west-1:646924620630:stack/amplify-serceldemoamplify-dev-173424/0124a680-a3e9-11ed-99b1-0aa6ab9854fd",
       "AmplifyAppId": "d643qy7ckusvz"
+    },
+    "categories": {
+      "auth": {
+        "sercelDemoAmplify": {}
+      }
     }
   }
 }
