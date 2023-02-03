@@ -1,9 +1,18 @@
-import Head from 'next/head'
-import { Heading } from '@chakra-ui/react'
+import { withAuthenticator } from '@aws-amplify/ui-react'
 
+// TODO: types
+const Home = ({ signOut, user }: any) => {
 
-export default function Home() {
+  console.log('user:', user)
+  console.log('signOut:', signOut)
+
   return (
-    <Heading>This is a heading - demo</Heading>
+    <>
+      <h1>Hello {user.username}</h1>
+      <button onClick={signOut}>Sign out</button>
+    </>
   )
+
 }
+
+export default withAuthenticator(Home)
