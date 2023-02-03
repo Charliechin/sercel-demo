@@ -24,7 +24,11 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Steps
 
-1. Created next app
-2. Add Chakra UI
-3. Add Amplify
-   3b. Configuring Amplify in \_app.js
+- 1. Created next app
+- 2. Add Chakra UI
+- 3. Add Amplify
+- 3a. Configuring Amplify in \_app.js
+- 3b. In Amplify Studio we configured (https://eu-west-1.admin.amplifyapp.com/admin/d643qy7ckusvz/dev/auth) the password policy
+- 3c. In index we added amplify form to log in
+  (We can check this in our browser, localstorage)
+- 4. We have created a protected route that it is only accessible if a user has been successfully authorized
