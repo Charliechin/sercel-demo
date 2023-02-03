@@ -1,18 +1,18 @@
-import { withAuthenticator } from '@aws-amplify/ui-react'
+import { withAuthenticator, WithAuthenticatorProps } from '@aws-amplify/ui-react'
+import { Button, Heading } from '@chakra-ui/react'
 
-// TODO: types
-const Home = ({ signOut, user }: any) => {
 
+
+const Home = ({ signOut, user }: WithAuthenticatorProps) => {
   console.log('user:', user)
   console.log('signOut:', signOut)
 
   return (
     <>
-      <h1>Hello {user.username}</h1>
-      <button onClick={signOut}>Sign out</button>
+      <Heading as={"h2"} mb={3}>Hello {user?.username}</Heading>
+      <Button colorScheme={"blue"} size="sm" onClick={signOut}>Sign out</Button>
     </>
   )
-
 }
 
 export default withAuthenticator(Home)
