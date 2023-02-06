@@ -60,7 +60,7 @@ const Header = ({ authenticated, ...props }: IHeaderProps) => {
       >
         <MenuItems><Link href="/">Start</Link></MenuItems>
         <MenuItems><Link href="/rules">Rules</Link></MenuItems>
-        <MenuItems><Link href="/scoreboard">Score board</Link></MenuItems>
+        <MenuItems><Link href="/scoreboard">Scoreboard</Link></MenuItems>
       </Box>
 
       <Box
