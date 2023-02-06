@@ -10,6 +10,7 @@ const Home = ({ signOut, user }: WithAuthenticatorProps) => {
   return (
     <>
       <Heading as={"h2"} mb={3}>Hello {user?.username}</Heading>
+      <p>hey</p>
       <Button colorScheme={"blue"} size="sm" onClick={signOut}>Sign out</Button>
     </>
   )
