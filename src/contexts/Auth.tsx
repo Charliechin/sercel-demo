@@ -72,7 +72,7 @@ export const AuthProvider = ({ children }: IAuthProviderProps) => {
     return () => {
       authListener();
     };
-  }, []);
+  }, [user]);
 
   /**
    * log user in

@@ -12,7 +12,7 @@ const SignIn = () => {
 
   useEffect(() => {
     if (isAuthenticated) router.push('/')
-  }, [])
+  }, [isAuthenticated, router])
 
 
   return (
